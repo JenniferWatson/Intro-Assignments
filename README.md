@@ -1,2 +1,2 @@
-# Intro-Assignments
-Intro Assignments
+# IntroAssignments
+assignments and exercised completed during the program intro
