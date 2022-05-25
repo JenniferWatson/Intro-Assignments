@@ -1,68 +1,139 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-    <title> Welcome to Html</title>
-    <link href="site.css" rel="stylesheet">
-    <script>
-        var teacher = {
-            firstname: 'Jen',
-            lastname: 'Watson',
-            languages: ['JavaScript', 
-        'c#']
-    };
-        function addLanguage(teacher, language)  {
-
-        teacher.languages.push('language');
-
-        console.log('Your teacher is '+ teacher.firstname);
-
-        if (teacher.languages.length===1) {
-            console.log ('They only know'+ teacher.length [0]);
-        } else {
-            console.log('They know lots of languages,' + teacher.languages.join(', '));
-            }
-
-        } 
-        
-        addLanguage(teacher, 'JavaScript');
-        addLanguage(teacher, 'angular');
-
-        ) 
-
-
-</script>
-</head>
-<p style="color: blueviolet;" id="p1" class="main">
-</p>></p>
-
-<body>
-    <h1> Welcome to Html 3</h1>
-
-    <div class="main">
-
-        <div class="row row-cols-auto">
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-            <div class="col">Column</div>
-        </div>
-    <p id="p1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, facere, provident hic exercitationem
-        vel rerum
-        pariatur
-        voluptatum reprehenderit, debitis quis animi obcaecati sed inventore. Dignissimos eaque sint soluta
-        veniam eos.
-    </p>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui minima error ea similique quis
-        inventore quia
-        quidem. Earum et fuga iure? Harum ab voluptate numquam deleniti, eligendi soluta nobis sapiente?
-    </p>
-    </div>
-
-    <div class="footer">
-        <p style="color: red;" id="p1" class="main"> this is a footer
+    <body>
+    
+        <h1 title="HTML Homework Assignment Module 1"</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <main>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+    
+        <p>
+            <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dignissimos doloremque tenetur, ipsam
+            consectetur tempore deleniti qui consequatur culpa delectus ut laboriosam eveniet numquam ipsa vitae
+            quibusdam repudiandae asperiores perspiciatis!</strong>
         </p>
-    </div>
-</body>
+        <p>
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia odio aperiam ab facere incidunt
+            necessitatibus voluptas beatae, excepturi sunt. Odio dignissimos quam molestiae dolorem deserunt reprehenderit
+            nam, nulla culpa.</em>
+        </p>
 
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ul>
+        
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
+        </ol>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>                                                        
+            <tbody>
+                <tr>
+                    <td>Groot Watson</td>
+                    <td>Groot@anyemail.com</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Nebula Watson</td>
+                    <td>Nebula@anyemail.com</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+            <br>
+            <hr>
+            <br>
+
+        <form action="process.php" =method="POST">
+            <div>   
+                <label>Frist Name</label>
+                <input type="text" name="firstName"
+                placeholder="Enter first name">
+            </div>
+
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName"
+                 placeholder="Enter last name">
+            </div>
+            <br>
+            <div> 
+                <label>Email</label>    
+                <input type="email" name ="email">  
+            </div>     
+            <br>       
+            <div>     
+                <label>Message</label> 
+                <textarea name="message"></textarea>  
+            </div>     
+            <br>       
+            <div> 
+                <label>Gender</label> 
+                <select name="gender"> 
+                <option value="male">Male</option> 
+                <option value="female">Female</option> 
+                <option value="other">Other</option> 
+                </select>
+            </div> 
+            <br> 
+                <div> 
+                    <label>AGE:</label> 
+                    <input type="number" name="age"
+                    value="4"> 
+            
+                </div> 
+                <br> 
+                <div> 
+                    <label>Birthday:</label> 
+                    <input type="date" name="birthday"
+                    > 
+                </div> 
+                <br> 
+                   <input type="submit" name ="submit" 
+                   Value="Submit">
+            
+        </form> 
+            
+        <button>Click Me</button>  
+
+        <br>
+
+        <a href="sample.jpg">
+            <img src="sample.jpg" alt="My Sample
+            Image" width="300">
+        </a>
+         
+        <blockquote cite="http://wonderlandpond.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia odio aperiam ab facere incidunt
+        necessitatibus voluptas beatae, excepturi sunt. Odio dignissimos quam molestiae dolorem deserunt reprehenderit
+        nam, nulla culpa.
+        </blockquote>
+
+        <p>The team at <abbr title="Strategis Homeland Intervention, Enforcement and Logistics Division">SHIELD</abbr>
+        is stellar</p>
+        <p><cite>HTML Training Source</cite> by Harry Potter</p>
+            
+    </body>
 </html>
